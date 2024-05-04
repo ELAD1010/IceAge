@@ -1,6 +1,7 @@
 package net.elad1010.ice_age;
 
 import com.mojang.logging.LogUtils;
+import net.elad1010.ice_age.block.ModBlocks;
 import net.elad1010.ice_age.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -28,6 +29,7 @@ public class IceAge
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -49,6 +51,10 @@ public class IceAge
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ICE_SHARD);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.ICE_STONE);
         }
     }
 
