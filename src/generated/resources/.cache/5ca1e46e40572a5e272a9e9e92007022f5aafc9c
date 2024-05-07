@@ -1,0 +1,4 @@
+// 1.20.1	2024-05-08T02:17:16.4380356	Tags for minecraft:block mod id ice_age
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/ice_age/tags/blocks/melter_machine_inputs.json
+c6783ae1dc65fa96238099371ea7006a203e51d2 data/minecraft/tags/blocks/mineable/pickaxe.json
+c6783ae1dc65fa96238099371ea7006a203e51d2 data/minecraft/tags/blocks/needs_stone_tool.json
